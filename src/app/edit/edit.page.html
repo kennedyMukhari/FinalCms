@@ -1,0 +1,93 @@
+<ion-content align = "center" >
+  
+  
+  
+      <ion-content>
+        <h1 align = "center" style ="color: black;">Edit Room Information</h1>
+        <ion-list>
+        <ion-item  >
+            <ion-label  floating style ="color:black;">Hotel Name</ion-label>     
+       <ion-input type ="text" [(ngModel)] = "hotel.name"></ion-input>
+        </ion-item>
+        <ion-item  >
+            <ion-label  floating style ="color:black;">Room Type</ion-label>     
+       <ion-input type ="text"  [(ngModel)] = "hotel.roomtype"></ion-input>
+        </ion-item>
+        <ion-item >
+            <ion-label  floating style ="color:black;">Single Room Price</ion-label>
+            <ion-input  [(ngModel)] = "hotel.singlep"></ion-input>
+           </ion-item>
+           <ion-item    >
+              <ion-label  floating style ="color:black;">Double Room Price</ion-label>
+              <ion-input  [(ngModel)] = "hotel.doublep"></ion-input>
+             </ion-item>
+             <ion-item    >
+                <ion-label  floating style ="color:black;">King Suite Price</ion-label>
+                <ion-input  [(ngModel)] = "hotel.kingp"></ion-input>
+               </ion-item>
+               <ion-item    >
+                  <ion-label  floating style ="color:black;">Queen Suite price</ion-label>
+                  <ion-input  [(ngModel)] = "hotel.queenp"></ion-input>
+                 </ion-item>
+                 <ion-item    >
+                  <ion-label  floating style ="color:black;">Children Discount-rate</ion-label>
+                  <ion-input  [(ngModel)] = "hotel.discount"></ion-input>
+                 </ion-item>
+           <ion-item >
+              <ion-label floating style ="color:black;">Room Class</ion-label>
+              <ion-input type="string" [(ngModel)] = "hotel.rating"></ion-input>
+             </ion-item>
+             <ion-item >
+                  <ion-label floating style ="color:black;">Phone Number</ion-label>
+                  <ion-input type="string" [(ngModel)] = "hotel.phone"></ion-input>
+                 </ion-item>
+      
+      
+                 <ion-item >
+                     <ion-label floating style ="color:black;">Room Address</ion-label>
+                     <ion-input  [(ngModel)] = "hotel.address"></ion-input>
+                    </ion-item>
+      
+      
+      
+           <ion-item >
+              <ion-label floating style ="color:black;">Room Feature1</ion-label>
+              <ion-input  [(ngModel)] = "hotel.feature1"></ion-input>
+             </ion-item>
+         
+                  <ion-item>
+                        <ion-label floating style ="color:black;">Room Feature2</ion-label>
+                        <ion-input  [(ngModel)] = "hotel.feature2"></ion-input>
+                       </ion-item>
+                       
+      
+                           <ion-item    >
+                                 <ion-label floating style ="color:black;">Room Feature3</ion-label>
+                                 <ion-input  [(ngModel)] = "hotel.feature3"></ion-input>
+                                </ion-item>
+      
+                                <ion-item    >
+                                    <ion-label floating style ="color:black;">Room Feature4</ion-label>
+                                    <ion-input  [(ngModel)] = "hotel.feature4"></ion-input>
+                                   </ion-item>
+      
+      
+                                <ion-item >
+      
+                <ion-label floating style ="color:black;">Room Description</ion-label>
+                <ion-input [(ngModel)] = "hotel.description"></ion-input>
+               </ion-item>
+               <ion-item    >
+                  <ion-label floating style ="color:black;;">Room Image</ion-label>
+                  <ion-input  [(ngModel)] = "hotel.pic1"></ion-input>
+                 </ion-item>
+                 
+                     </ion-list>
+                
+             
+      <button ion-button full (click) = "save(hotel)" style="background-color: dodgerblue;width:100%;height:35px">SAVE&nbsp;<ion-icon name="add"></ion-icon></button>
+      </ion-content>
+      
+  
+  </ion-content>
+  
